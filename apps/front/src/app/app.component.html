@@ -1,8 +1,14 @@
-<div style="text-align: center">
-  <h1>Welcome to front!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<!-- <simples-page-teste></simples-page-teste> -->
+<simples-pages-teste></simples-pages-teste>
+
+<p testDirective>
+  Start editing to see some magic happen :)
+</p>
+<p verdeDirective>Highlight me!</p>
+
+
+<button routerLink="/websites">Websites</button>
+<button routerLink="/dashboard">Dashboard</button>
+<button routerLink="">Home</button>
+
+<router-outlet></router-outlet>

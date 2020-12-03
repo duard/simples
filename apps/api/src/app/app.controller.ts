@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 
-import { Message } from '@simples/api-interfaces';
+import type { Message } from '@simples/api-interfaces';
 
 import { AppService } from './app.service';
 
@@ -13,3 +13,4 @@ export class AppController {
     return this.appService.getData();
   }
 }
+
