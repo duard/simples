@@ -12,7 +12,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
-  const port = process.env.PORT || 3333;
+  const port = process.env.API_SIMPLES_PORT || 3333;
+
+  console.log('RODANDO => ', port, process.env.API_SIMPLES_PORT );
   await app.listen(port, () => {
     Logger.log('Listening at http://localhost:' + port + '/' + globalPrefix);
   });

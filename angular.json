@@ -13,7 +13,7 @@
       "prefix": "simples",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/apps/front",
             "index": "apps/front/src/index.html",
@@ -23,7 +23,10 @@
             "aot": true,
             "assets": ["apps/front/src/favicon.ico", "apps/front/src/assets"],
             "styles": ["apps/front/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+              "path": "webpack.config.js"
+            }
           },
           "configurations": {
             "production": {
@@ -57,7 +60,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "port": 4444,
             "browserTarget": "front:build",
@@ -148,7 +151,6 @@
         "serve": {
           "builder": "@nrwl/node:execute",
           "options": {
-            "port": 4445,
             "buildTarget": "api:build"
           }
         },
@@ -341,6 +343,69 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        }
+      }
+    },
+    "api-cruds": {
+      "root": "libs/api-cruds",
+      "sourceRoot": "libs/api-cruds/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/api-cruds/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/api-cruds/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "api-core": {
+      "root": "libs/api-core",
+      "sourceRoot": "libs/api-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/api-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/api-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "api-shared": {
+      "root": "libs/api-shared",
+      "sourceRoot": "libs/api-shared/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/api-shared/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/api-shared/jest.config.js",
+            "passWithNoTests": true
+          }
         }
       }
     }

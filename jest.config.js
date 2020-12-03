@@ -9,5 +9,8 @@ module.exports = {
     '<rootDir>/libs/app-components',
     '<rootDir>/libs/app-tests',
     '<rootDir>/libs/app-store',
+    '<rootDir>/libs/api-cruds',
+    '<rootDir>/libs/api-core',
+    '<rootDir>/libs/api-shared',
   ],
 };

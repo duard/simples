@@ -56,6 +56,15 @@
     },
     "app-store": {
       "tags": []
+    },
+    "api-cruds": {
+      "tags": []
+    },
+    "api-core": {
+      "tags": []
+    },
+    "api-shared": {
+      "tags": []
     }
   }
 }

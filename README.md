@@ -9,6 +9,10 @@ npm uninstall -g angular-cli;
 npm install -g @angular/cli@latest;
 npx ng update --all --force;
 npm audit fix; npm audit fix --force;
+
+# se for linux
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
 ```
 
 rodar a API e o APP paralelamente :-D `npm run dev`
@@ -33,6 +37,7 @@ nx generate @nrwl/nest:library lib-nome-a-ser-creiada
 nx generate @nrwl/angular:library lib-app-zest
 
 npx nx g @nrwl/angular:lib pages
+npx nx g @nrwl/nest:library api-cruds     
 
 ```
 
@@ -48,12 +53,13 @@ npm audit fix; npm audit fix --force;
 #### installs nestjs
 
 ```
-npm i --save typeorm @nestjs/config @nestjs/typeorm @nestjs/common dotenv-flow mysql
-npm i --save-dev
+npm i --save typeorm @nestjs/config @nestjs/typeorm @nestjs/common @nestjs/graphql @nestjsx/crud-typeorm  @nestjsx/crud dotenv-flow mysql joi class-transformer class-validator  
 
 npm audit fix; npm audit fix --force;
 
 ```
+
+
 
 ## configure o cypress para rodar no WSL2 :-)
 
