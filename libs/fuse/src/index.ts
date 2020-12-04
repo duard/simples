@@ -1,5 +1,6 @@
 export * from './lib/fuse.module';
 export * from './lib/shared.module';
+export * from './lib/layout/layout.module';
 
 export * from './lib/animations';
 
@@ -16,3 +17,18 @@ export * from './lib/services/copier.service';
 export * from './lib/services/match-media.service';
 export * from './lib/services/translation-loader.service';
 export * from './lib/services/splash-screen.service';
+
+
+
+
+export * from './lib/components/navigation/navigation.service';
+export * from './lib/components/sidebar/sidebar.service';
+export * from './lib/navigation/navigation';
+
+
+
+
+
+// import { FuseNavigationService } from 'libs/fuse/src/lib/components/navigation/navigation.service';
+// import { FuseSidebarService } from 'libs/fuse/src/lib/components/sidebar/sidebar.service';
+// import { navigation } from 'libs/fuse/src/lib/navigation/navigation';

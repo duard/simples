@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Route, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppSharedModule } from '@simples/app-shared';
 import { AppStoreModule } from '@simples/app-store';
-
-import { MatMomentDateModule } from "@angular/material-moment-adapter";
-
-
 import {
   FuseModule,
   FuseProgressBarModule,
   FuseSharedModule,
   FuseSidebarModule,
   FuseThemeOptionsModule,
+  LayoutModule,
 } from '@simples/fuse';
 import { PagesModule } from '@simples/pages';
 
@@ -37,6 +36,8 @@ const appRoutes: Route[] = [
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+
     AppStoreModule,
     RouterModule.forRoot(appRoutes),
 
@@ -55,6 +56,9 @@ const appRoutes: Route[] = [
     FuseSharedModule,
     FuseSidebarModule,
     FuseThemeOptionsModule,
+
+    // App modules
+    LayoutModule,
 
     AppSharedModule,
     PagesModule,
