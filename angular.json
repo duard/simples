@@ -408,6 +408,32 @@
           }
         }
       }
+    },
+    "app-core": {
+      "projectType": "library",
+      "root": "libs/app-core",
+      "sourceRoot": "libs/app-core/src",
+      "prefix": "simples",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/app-core/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/app-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

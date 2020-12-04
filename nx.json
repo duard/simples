@@ -65,6 +65,9 @@
     },
     "api-shared": {
       "tags": []
+    },
+    "app-core": {
+      "tags": []
     }
   }
 }

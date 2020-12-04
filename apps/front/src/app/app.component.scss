@@ -1,36 +1,7 @@
-html, body {
-  height: 200%;
-}
+.btn-tailwind {
+  @apply bg-transparent text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded;
 
-nav {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; /* required */
-}
-
-.nav-selections {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font: 18px "lato", sans-serif;
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  padding: 18px;
-  float: right;
-  margin-left: 50px;
-  transition: 1.5s;
-}
-
-.nav-selections:hover {
-  transition: 1.5s;
-  color: black;
-}
-
-ul {
-  background-color: #B79b58;
-  overflow: auto;
-}
-
-li {
-  list-style-type: none;
+  &:hover {
+    @apply bg-blue-500 text-white border-transparent;
+  }
 }

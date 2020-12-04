@@ -26,7 +26,8 @@
       "@simples/app-store": ["libs/app-store/src/index.ts"],
       "@simples/api-cruds": ["libs/api-cruds/src/index.ts"],
       "@simples/api-core": ["libs/api-core/src/index.ts"],
-      "@simples/api-shared": ["libs/api-shared/src/index.ts"]
+      "@simples/api-shared": ["libs/api-shared/src/index.ts"],
+      "@simples/app-core": ["libs/app-core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],
