@@ -21,9 +21,25 @@
             "polyfills": "apps/front/src/polyfills.ts",
             "tsConfig": "apps/front/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/front/src/favicon.ico", "apps/front/src/assets"],
+            "assets": [
+              "apps/front/src/favicon.ico",
+              "apps/front/src/assets",
+
+              {
+                "glob": "**/*",
+                "input": "./assets/",
+                "output": "./assets"
+              }
+            ],
             "styles": ["apps/front/src/styles.scss"],
             "scripts": [],
+
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "assets"
+              ]
+            },
+            "extractCss": true,
             "customWebpackConfig": {
               "path": "webpack.config.js"
             }

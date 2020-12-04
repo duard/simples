@@ -9,7 +9,7 @@ module.exports = (config) => {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+          test: /\.(scss|sass|css)$/i,
           loader: 'postcss-loader',
           options: {
             postcssOptions: {

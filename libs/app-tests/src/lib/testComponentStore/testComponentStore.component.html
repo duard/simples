@@ -1,5 +1,6 @@
 <header>
-	<h1>Parking Lot Control</h1>
+  <h1>Parking Lot Control</h1>
+  <img src="assets/images/pngs/engrenagem.png" width="32px">
 </header>
 
 <ng-container *ngIf="vm$ | async as vm">
@@ -36,5 +37,7 @@
 		</div>
 	</div>
 
-	<app-car-list [cars]="vm.cars"></app-car-list>
+  <app-car-list [cars]="vm.cars"></app-car-list>
+
+
 </ng-container>
