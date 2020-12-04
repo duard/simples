@@ -1,8 +1,7 @@
-import { FuseModule } from './../../fuse.module';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatOptionModule } from '@angular/material/core';
@@ -12,8 +11,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { FuseMaterialColorPickerModule, FuseSidebarModule } from '..';
+
 import { FuseDirectivesModule } from '../../directives/directives';
+import { FuseMaterialColorPickerModule } from '../material-color-picker/material-color-picker.module';
+import { FuseSidebarModule } from '../sidebar/sidebar.module';
 import { FuseThemeOptionsComponent } from './theme-options.component';
 
 // import { FuseDirectivesModule } from '@fuse/directives/directives';
@@ -22,36 +23,29 @@ import { FuseThemeOptionsComponent } from './theme-options.component';
 
 // import { FuseThemeOptionsComponent } from '@fuse/components/theme-options/theme-options.component';
 
-
 @NgModule({
-    declarations: [
-        FuseThemeOptionsComponent
-    ],
-    imports     : [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
+  declarations: [FuseThemeOptionsComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
 
-        FlexLayoutModule,
+    FlexLayoutModule,
 
-        MatButtonModule,
-        MatCheckboxModule,
-        MatDividerModule,
-        MatFormFieldModule,
-        MatIconModule,
-        MatOptionModule,
-        MatRadioModule,
-        MatSelectModule,
-        MatSlideToggleModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatOptionModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSlideToggleModule,
 
-        FuseDirectivesModule,
-        FuseMaterialColorPickerModule,
-        FuseSidebarModule
-    ],
-    exports     : [
-        FuseThemeOptionsComponent
-    ]
+    FuseDirectivesModule,
+    FuseMaterialColorPickerModule,
+    FuseSidebarModule,
+  ],
+  exports: [FuseThemeOptionsComponent],
 })
-export class FuseThemeOptionsModule
-{
-}
+export class FuseThemeOptionsModule {}

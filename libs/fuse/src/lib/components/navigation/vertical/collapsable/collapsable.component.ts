@@ -1,15 +1,16 @@
-/* eslint-disable @typescript-eslint/no-inferrable-types */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ChangeDetectorRef, Component, HostBinding, Input, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { fuseAnimations, FuseNavigationItem } from '@simples/fuse';
 import { merge, Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 
+import { fuseAnimations } from '../../../../animations';
+import { FuseNavigationItem } from '../../../../types/fuse-navigation';
 import { FuseNavigationService } from '../../navigation.service';
 
-
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// import { fuseAnimations, FuseNavigationItem } from '@simples/fuse';
 @Component({
   selector: 'fuse-nav-vertical-collapsable',
   templateUrl: './collapsable.component.html',

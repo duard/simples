@@ -2,10 +2,17 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, HostBinding, HostListener, Input, OnDestroy, OnInit } from '@angular/core';
-import { fuseAnimations, FuseConfigService } from '@simples/fuse';
+
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
+// import { FuseConfigService } from '@fuse/services/config.service';
+import { FuseConfigService } from '../../../../services/config.service';
+
+
+import { fuseAnimations } from '../../../../animations';
+import { FuseNavigationItem } from '../../../../types/fuse-navigation';
+import { FuseNavigationService } from '../../navigation.service';
 
 @Component({
   selector: 'fuse-nav-horizontal-collapsable',
