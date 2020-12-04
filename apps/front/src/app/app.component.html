@@ -2,6 +2,12 @@
 <button routerLink="/tests">Tests</button>
 <button routerLink="/dashboard">Dashboard</button>
 <button routerLink="/">Home</button>
-<router-outlet></router-outlet>
+<div id="app-frame">
+  <nz-spin class="global-spinner"
+           [nzSpinning]="true"
+           nzSize="large">
+      <router-outlet></router-outlet>
+  </nz-spin>
+</div>
 
 <p>Iniciando</p>

@@ -13,9 +13,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppSharedModule,
     AppStoreModule,
     AppRoutingModule,
-    AppSharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
