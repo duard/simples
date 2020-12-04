@@ -1,6 +1,8 @@
 export * from './lib/fuse.module';
 export * from './lib/shared.module';
 
+export * from './lib/animations';
+
 export * from './lib/components';
 export * from './lib/directives/directives';
 export * from './lib/pipes/pipes.module';

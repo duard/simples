@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { Component, ContentChild, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import * as Prism from 'prismjs/prism';
-import '@fuse/components/highlight/prism-languages';
 
 @Component({
     selector : 'fuse-highlight',

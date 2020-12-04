@@ -27,9 +27,10 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "assets",
-                "libs/fuse/src",
-                "libs/fuse/src/lib"
-
+                "libs/fuse/src/lib",
+                "libs/sasslib/src/lib",
+                "libs/fuse/src/lib/scss",
+                "libs/sasslib/src/lib/scss"
               ]
             },
             "extractCss": true
@@ -369,6 +370,32 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/fuse/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "sasslib": {
+      "projectType": "library",
+      "root": "libs/sasslib",
+      "sourceRoot": "libs/sasslib/src",
+      "prefix": "simples",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/sasslib/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/sasslib/jest.config.js",
             "passWithNoTests": true
           }
         }

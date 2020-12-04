@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatMomentDateModule } from '@angular/material-moment-adapter/adapter';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,6 +6,10 @@ import { Route, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppSharedModule } from '@simples/app-shared';
 import { AppStoreModule } from '@simples/app-store';
+
+import { MatMomentDateModule } from "@angular/material-moment-adapter";
+
+
 import {
   FuseModule,
   FuseProgressBarModule,

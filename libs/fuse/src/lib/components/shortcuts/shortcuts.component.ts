@@ -1,11 +1,13 @@
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MediaObserver } from '@angular/flex-layout';
 import { CookieService } from 'ngx-cookie-service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-
-import { FuseMatchMediaService } from '@fuse/services/match-media.service';
-import { FuseNavigationService } from '@fuse/components/navigation/navigation.service';
+import { FuseMatchMediaService } from '../../services/match-media.service';
+import { FuseNavigationService } from '../navigation/navigation.service';
 
 @Component({
     selector   : 'fuse-shortcuts',

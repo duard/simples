@@ -10,5 +10,6 @@ module.exports = {
     '<rootDir>/libs/app-tests',
     '<rootDir>/libs/app-store',
     '<rootDir>/libs/fuse',
+    '<rootDir>/libs/sasslib',
   ],
 };
