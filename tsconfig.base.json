@@ -10,22 +10,56 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@env/*": ["environments/*"],
-      "@simples/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@simples/pages": ["libs/pages/src/index.ts"],
-      "@simples/app-shared": ["libs/app-shared/src/index.ts"],
-      "@simples/app-directives": ["libs/app-directives/src/index.ts"],
-      "@simples/app-components": ["libs/app-components/src/index.ts"],
-      "@simples/app-tests": ["libs/app-tests/src/index.ts"],
-      "@simples/app-store": ["libs/app-store/src/index.ts"]
+      "@env/*": [
+        "environments/*"
+      ],
+      "@simples/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@simples/pages": [
+        "libs/pages/src/index.ts"
+      ],
+      "@simples/app-shared": [
+        "libs/app-shared/src/index.ts"
+      ],
+      "@simples/app-directives": [
+        "libs/app-directives/src/index.ts"
+      ],
+      "@simples/app-components": [
+        "libs/app-components/src/index.ts"
+      ],
+      "@simples/app-tests": [
+        "libs/app-tests/src/index.ts"
+      ],
+      "@simples/app-store": [
+        "libs/app-store/src/index.ts"
+      ],
+      "@simples/fuse": [
+        "libs/fuse/src/index.ts"
+      ],
+      "@fuse": [
+        "libs/fuse/src/lib"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"],
-  "include": ["**/*.ts", "./libs/*/src/**/*", "./apps/*/src/**/*"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ],
+  "include": [
+    "**/*.ts",
+    "./libs/*/src/**/*",
+    "./apps/*/src/**/*"
+  ]
 }

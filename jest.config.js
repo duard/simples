@@ -9,5 +9,6 @@ module.exports = {
     '<rootDir>/libs/app-components',
     '<rootDir>/libs/app-tests',
     '<rootDir>/libs/app-store',
+    '<rootDir>/libs/fuse',
   ],
 };

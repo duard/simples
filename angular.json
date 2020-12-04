@@ -23,7 +23,16 @@
             "aot": true,
             "assets": ["apps/front/src/favicon.ico", "apps/front/src/assets"],
             "styles": ["apps/front/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "assets",
+                "libs/fuse/src",
+                "libs/fuse/src/lib"
+
+              ]
+            },
+            "extractCss": true
           },
           "configurations": {
             "production": {
@@ -334,6 +343,32 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/app-store/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "fuse": {
+      "projectType": "library",
+      "root": "libs/fuse",
+      "sourceRoot": "libs/fuse/src",
+      "prefix": "simples",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/fuse/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/fuse/jest.config.js",
             "passWithNoTests": true
           }
         }
