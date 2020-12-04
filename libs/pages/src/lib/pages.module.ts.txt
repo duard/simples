@@ -1,0 +1,15 @@
+import { AppTestsModule } from '@simples/app-tests';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { AppSharedModule } from '@simples/app-shared';
+
+import { TesteComponent } from './teste/teste.component';
+import { AboutModule } from './about/about.module';
+import { TestComponent } from './test/test.component';
+import { TestModule } from './test/test.module';
+
+@NgModule({
+  imports: [CommonModule, AppSharedModule, AppTestsModule, AboutModule, TestModule],
+  declarations: [TesteComponent, TestComponent], exports:[TesteComponent]
+})
+export class PagesModule {}
