@@ -1,4 +1,7 @@
-@import "fuse";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../../../../libs//fuse//src//lib/scss/fuse.scss";
+@import "scss/fuse";
+@import 'fuse';
 
 vertical-layout-1 {
     display: flex;

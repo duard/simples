@@ -1,10 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+
 // Import Fuse core library
-// @import "fuse/scss/core";
+@import "@fuse/scss/core";
 
-@import "core";
-@import "variables";
+
+// @import "@fuse/scss/fuse";
+@import "../../../../libs//fuse//src//lib/scss/core.scss";
+@import "scss/core";
+
+
 // Import app.theme.scss
-// @import "app/app.theme";
-
-
+@import "app/app.theme";

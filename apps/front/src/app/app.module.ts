@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Route, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppSharedModule } from '@simples/app-shared';
 import { AppStoreModule } from '@simples/app-store';
@@ -20,26 +20,23 @@ import { PagesModule } from '@simples/pages';
 
 import { AppComponent } from './app.component';
 import { fuseConfig } from './fuse-config';
+import { SampleModule } from './main/sample/sample.module';
 
-const appRoutes: Route[] = [
+const appRoutes: Routes = [
   {
-    path: 'websites',
-    loadChildren: '../websites/websites.module#WebsitesModule',
-  },
-  {
-    path: 'dashboard',
-    loadChildren: '../dashboard/dashboard.module#DashboardModule',
+    path: '**',
+    redirectTo: 'sample',
   },
 ];
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
 
-    AppStoreModule,
     RouterModule.forRoot(appRoutes),
+
+    AppStoreModule,
 
     TranslateModule.forRoot(),
 
@@ -62,6 +59,7 @@ const appRoutes: Route[] = [
 
     AppSharedModule,
     PagesModule,
+    SampleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

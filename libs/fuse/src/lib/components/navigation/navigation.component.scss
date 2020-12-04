@@ -1,4 +1,8 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../../../../libs//fuse//src//lib/scss/fuse.scss";
+@import "scss/fuse";
 @import 'fuse';
+
 
 fuse-navigation {
     display: flex;

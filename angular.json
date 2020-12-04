@@ -38,7 +38,8 @@
                 "libs/fuse/src/lib",
                 "libs/sasslib/src/lib",
                 "libs/fuse/src/lib/scss",
-                "libs/sasslib/src/lib/scss"
+                "libs/fuse/src/lib/scss/partials",
+                "libs/fuse/src/lib/scss/"
               ]
             },
             "extractCss": true

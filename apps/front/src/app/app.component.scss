@@ -1,4 +1,6 @@
-@import "fuse";
+// @import "@fuse/scss/fuse";
+@import "../../../../libs//fuse//src//lib/scss/fuse.scss";
+@import "scss/fuse";
 
 :host {
     position: relative;
