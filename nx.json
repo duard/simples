@@ -71,6 +71,9 @@
     },
     "shared-fuse": {
       "tags": ["scope:shared", "type:styles"]
+    },
+    "shared-styles": {
+      "tags": ["scope:shared", "type:styles"]
     }
   }
 }

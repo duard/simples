@@ -30,11 +30,8 @@
       "@simples/app-core": ["libs/app-core/src/index.ts"],
       "@simples/shared/fuse": ["libs/shared/fuse/src/index.ts"],
       "@fuse": ["libs/shared/fuse/src/lib/@fuse/"],
-
-      "@fuse2": [
-        "libs/fuse/src/lib/"
-      ],
-
+      "@fuse2": ["libs/fuse/src/lib/"],
+      "@simples/shared/styles": ["libs/shared/styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],

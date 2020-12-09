@@ -22,7 +22,10 @@
             "tsConfig": "apps/front/tsconfig.app.json",
             "aot": true,
             "assets": ["apps/front/src/favicon.ico", "apps/front/src/assets"],
-            "styles": ["apps/front/src/styles.scss"],
+            "styles": [
+              "libs/shared/fuse/src/index.scss",
+              "libs/shared/styles/src/index.scss"
+            ],
             "scripts": [],
             "customWebpackConfig": {
               "path": "webpack.config.js"
@@ -460,6 +463,14 @@
           "style": "scss"
         }
       }
+    },
+    "shared-styles": {
+      "projectType": "library",
+      "root": "libs/shared/styles",
+      "sourceRoot": "libs/shared/styles/src",
+      "prefix": "workspace",
+      "architect": {},
+      "schematics": {}
     }
   },
   "cli": {

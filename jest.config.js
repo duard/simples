@@ -14,5 +14,6 @@ module.exports = {
     '<rootDir>/libs/api-shared',
     '<rootDir>/libs/app-core',
     '<rootDir>/libs/shared/fuse',
+    '<rootDir>/libs/shared/styles',
   ],
 };
