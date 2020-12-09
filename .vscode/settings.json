@@ -34,9 +34,7 @@
   "editor.cursorWidth": 3,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "smooth",
-  "workbench.colorCustomizations": {
 
-  },
   // A set of command IDs whose keybindings will not be sent to the Shell and
   // instead always be handled by Code. This allows the use of keybindings
   // that would normally be consumed by the Shell to act the same as when
@@ -67,5 +65,11 @@
     "workbench.action.terminal.scrollUpPage",
     "workbench.action.terminal.toggleTerminal"
   ],
+
+  "workbench.colorCustomizations": {
+
+    "editorCursor.foreground": "#cecece",
+    "terminalCursor.foreground": "#c9c9c9"
+  },
 }
 

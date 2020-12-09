@@ -32,6 +32,8 @@
               }
             ],
             "scripts": [],
+            "styles": ["apps/front/src/styles.scss"],
+
             "stylePreprocessorOptions": {
               "includePaths": [
                 "assets",
