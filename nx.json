@@ -68,6 +68,9 @@
     },
     "app-core": {
       "tags": []
+    },
+    "shared-fuse": {
+      "tags": ["scope:shared", "type:styles"]
     }
   }
 }

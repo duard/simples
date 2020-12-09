@@ -434,6 +434,32 @@
           "style": "scss"
         }
       }
+    },
+    "shared-fuse": {
+      "projectType": "library",
+      "root": "libs/shared/fuse",
+      "sourceRoot": "libs/shared/fuse/src",
+      "prefix": "simples",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/fuse/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/fuse/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

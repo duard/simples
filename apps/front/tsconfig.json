@@ -12,5 +12,15 @@
     {
       "path": "./tsconfig.editor.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@fuse": [
+        "libs/shared/fuse/src/lib/@fuse/"
+      ],
+      "fuse": [
+        "libs/shared/fuse/src/lib/@fuse",
+      ]
+    }
+  }
 }
