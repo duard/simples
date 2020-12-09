@@ -29,7 +29,12 @@
       "@simples/api-shared": ["libs/api-shared/src/index.ts"],
       "@simples/app-core": ["libs/app-core/src/index.ts"],
       "@simples/shared/fuse": ["libs/shared/fuse/src/index.ts"],
-      "@fuse": ["libs/shared/fuse/src/lib/@fuse/"]
+      "@fuse": ["libs/shared/fuse/src/lib/@fuse/"],
+
+      "@fuse2": [
+        "libs/fuse/src/lib/"
+      ],
+
     }
   },
   "exclude": ["node_modules", "tmp"],
