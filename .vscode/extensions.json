@@ -4,6 +4,43 @@
     "angular.ng-template",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "esbenp.prettier-vscode",
-    "firsttris.vscode-jest-runner"
+    "firsttris.vscode-jest-runner",
+    // diversas
+    "mutantdino.resourcemonitor",
+    "devondcarew.bazel-code",
+    "EditorConfig.EditorConfig",
+    "eg2.vscode-npm-script",
+    "esbenp.prettier-vscode",
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "msjsdiag.debugger-for-chrome",
+    "ms-azuretools.vscode-docker",
+    "shanoor.vscode-nginx",
+    "DavidAnson.vscode-markdownlint",
+    "donjayamanne.githistory",
+    "humao.rest-client",
+    // themes
+    "hedinne.popping-and-locking-vscode",
+    "sdras.night-owl",
+    "PKief.material-icon-theme",
+    "CoenraadS.bracket-pair-colorizer",
+    // intellisenses
+    "christian-kohler.path-intellisense",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "cmborchert.local-import-intellisense",
+    // SQL
+    "jakebathman.mysql-syntax",
+    "mtxr.sqltools",
+    // Angular & TypeScript
+    "dbaeumer.vscode-eslint",
+    "nrwl.angular-console",
+    "rbbit.typescript-hero",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "mikael.angular-beastcode",
+    "Angular.ng-template",
+    "johnpapa.angular2",
+    "dzannotti.vscode-babel-coloring",
+    "henry-li.vscode-import-formatter"
   ]
 }

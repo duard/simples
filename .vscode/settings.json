@@ -1,0 +1,71 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.activityBar.visible": false,
+  "editor.wrappingIndent": "indent",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabCompletion": "on",
+  "bracketPairColorizer.forceIterationColorCycle": true,
+  "editor.rulers": [
+    0,
+    80
+  ],
+  "typescript.format.enable": true,
+  "editor.multiCursorModifier": "alt",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Popping and Locking",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.cursorWidth": 3,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "workbench.colorCustomizations": {
+
+  },
+  // A set of command IDs whose keybindings will not be sent to the Shell and
+  // instead always be handled by Code. This allows the use of keybindings
+  // that would normally be consumed by the Shell to act the same as when
+  // the terminal is not focused, for example ctrl+p to launch Quick Open.
+  "terminal.integrated.commandsToSkipShell": [
+    "editor.action.toggleTabFocusMode",
+    "workbench.action.debug.continue",
+    "workbench.action.debug.restart",
+    "workbench.action.debug.run",
+    "workbench.action.debug.start",
+    "workbench.action.debug.stop",
+    "workbench.action.quickOpen",
+    "workbench.action.showCommands",
+    "workbench.action.terminal.clear",
+    "workbench.action.terminal.copySelection",
+    "workbench.action.terminal.focus",
+    "workbench.action.terminal.focusNext",
+    "workbench.action.terminal.focusPrevious",
+    "workbench.action.terminal.kill",
+    "workbench.action.terminal.new",
+    "workbench.action.terminal.paste",
+    "workbench.action.terminal.runSelectedText",
+    "workbench.action.terminal.scrollDown",
+    "workbench.action.terminal.scrollDownPage",
+    "workbench.action.terminal.scrollToBottom",
+    "workbench.action.terminal.scrollToTop",
+    "workbench.action.terminal.scrollUp",
+    "workbench.action.terminal.scrollUpPage",
+    "workbench.action.terminal.toggleTerminal"
+  ],
+}
+
